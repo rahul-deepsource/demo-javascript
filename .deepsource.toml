@@ -19,6 +19,5 @@ name = "prettier"
 enabled = true
 
 [[transformers]]
-name = "standard"
+name = "standardjs"
 enabled = true
-
