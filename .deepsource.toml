@@ -15,5 +15,9 @@ enabled = true
   ]
 
 [[transformers]]
-    name = "prettier"
-    enabled = true
+name = "prettier"
+enabled = true
+
+[[transformers]]
+name = "standard"
+enabled = true
