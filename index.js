@@ -5,13 +5,13 @@ function isEven(x) {
 }
 
 function isNumber(num) {
-  let x = undefined;
+  let x;
   x = num % 2;
   if (false) {
     console.log("Number is false");
-  } else if (!!x) {
+  } else if (x) {
     console.log(`Number: ${x}`);
-  } else if (2 == x) {
+  } else if (x == 2) {
   }
 }
 
@@ -21,17 +21,17 @@ function isTruthy(x) {
 }
 
 function area(r) {
-  let math = Math();
+  const math = Math();
   return math.PI * r * r;
 }
 
 function isFooAvailable(obj) {
-  console.log(`Value of obj[foo]: ${obj["foo"]}`);
+  console.log(`Value of obj[foo]: ${obj.foo}`);
   return obj.hasOwnProperty("foo");
 }
 
 function findFooBar() {
-  var re = /=foo   bar/;
+  const re = /=foo {3}bar/;
   re.test("foobar");
 }
 
@@ -56,14 +56,14 @@ function callHiEveryMinutes(x) {
   } else window.setTimeout("alert('Hi')", x * 1000);
 }
 
-let result = isFooAvailable({
+const result = isFooAvailable({
   bar: "bar",
   z: "z",
 })((function () {})(), 0);
 
 function checkYoda() {
-  let yoda = true;
-  if (true == yoda) {
+  const yoda = true;
+  if (yoda == true) {
     console.log("I am yoda");
   }
 }
